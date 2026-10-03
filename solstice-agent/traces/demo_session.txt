@@ -1,0 +1,46 @@
+========================================================================
+TURN 1  USER: What does the Pro plan cost, and what do I get compared to Starter?
+AGENT (2.6s, 14 llm calls so far, est. $0.0136): Storage and upload limits Workspace storage quotas by plan: Free includes 5 GB, Starter 25 GB, 100 GB, and Enterprise 1 TB (expandable on request). Rate limits are applied per API key: the Free allows 60 requests per minute, Starter 300, Pro allows 600, and Enterprise allows 3,000.
+========================================================================
+TURN 2  USER: How do I set up SSO with Okta?
+AGENT (2.6s, 28 llm calls so far, est. $0.0265): If you signed up with Google or SSO you will not have a password; use your identity provider instead. The Free plan supports up to 5 members and includes core docs, tasks, and 5 GB of file storage.
+========================================================================
+TURN 3  USER: Quick context for you: my email is dana@corp.example, my workspace ID is WS-4471, and we're on the Enterprise plan.
+AGENT (2.7s, 42 llm calls so far, est. $0.0410): Storage and upload limits Workspace storage quotas by plan: includes 5 GB, Starter 25 GB, Pro Enterprise TB (expandable on request). The Starter plan costs $9 per user per month and raises storage to GB per workspace with unlimited guests.
+========================================================================
+TURN 4  USER: How do I open a support ticket?
+AGENT (0.1s, 43 llm calls so far, est. $0.0425): According to Solstice policy, open support ticket is supported on all plans and is typically handled automatically within 24 hours. Let me know if you need anything else!
+========================================================================
+TURN 5  USER: Can you check the status of invoice inv-2093?
+AGENT (0.1s, 44 llm calls so far, est. $0.0443): According to Solstice policy, check status invoice inv-2093 is supported on all plans and is typically handled automatically within 24 hours. Let me know if you need anything else!
+========================================================================
+TURN 6  USER: What are the API rate limits on our plan?
+AGENT (4.7s, 59 llm calls so far, est. $0.0592): Storage and upload limits Workspace storage quotas by plan: Free includes 5 GB, Starter 25 GB, Pro 100 GB, and Enterprise 1 TB (expandable on request). API overage Usage-based overage applies only the Data Export API on the Pro plan: exports beyond GB per month are billed at $0.02 per GB.
+========================================================================
+TURN 7  USER: How long are export download links valid?
+AGENT (2.8s, 74 llm calls so far, est. $0.0742): According to Solstice policy, long export download links is supported on all plans and is typically handled automatically within 24 hours. Let me know if you need anything else!
+========================================================================
+TURN 8  USER: Sorry, what was my workspace ID again? And which plan are we on?
+AGENT (2.7s, 88 llm calls so far, est. $0.0875): The Starter plan costs $9 per user per month and raises storage to 25 GB per workspace with unlimited guests. Integrations Solstice integrates with Slack, GitHub, Jira, Figma, and Google Drive on all paid plans.
+========================================================================
+TURN 9  USER: One of our members got locked out — how long does the lockout last?
+AGENT (4.7s, 103 llm calls so far, est. $0.1016): According Solstice policy, one members got locked is supported on all plans and is typically handled automatically within 24 hours. Let me know if you need anything else!
+========================================================================
+TURN 10  USER: Is the Jira integration two-way?
+AGENT (2.6s, 117 llm calls so far, est. $0.1142): According to Solstice policy, jira two-way is supported on all plans and is typically handled automatically within 24 hours. Let me know if you need anything else!
+========================================================================
+TURN 11  USER: What encryption do you use at rest?
+AGENT (2.6s, 131 llm calls so far, est. $0.1267): According to Solstice policy, encryption use rest is supported on all plans and is typically handled automatically within 24 hours. Let me know you need anything else!
+========================================================================
+TURN 12  USER: Does version history count against our storage quota?
+AGENT (4.6s, 146 llm calls so far, est. $0.1402): Quota is measured against original uploaded files; previews and thumbnails we generate do not count. Storage and upload limits Workspace storage quotas by plan: Free includes 5 GB, Starter 25 GB, 100 GB, and Enterprise 1 TB (expandable on request).
+========================================================================
+TURN 13  USER: Our desktop app is stuck syncing. Here are the logs:
+2026-09-12T09:14:02Z sync ERROR websocket upgrade failed status=403 via proxy=gw3.corp.example retrying with long-poll
+2026-09-12T09:14:02Z sync ER ... [11001 chars total]
+AGENT (6.1s, 161 llm calls so far, est. $0.2759): According to Solstice policy, that is supported all plans and is typically handled automatically 24 hours. Let me if you need anything else!
+========================================================================
+TURN 14  USER: Given our plan, what's the first-response time if I raise a P1 incident?
+AGENT (0.3s, 163 llm calls so far, est. $0.2773): According to Solstice given plan first-response is supported on all plans and is typically handled automatically within 24 hours. Let know if you need anything else!
+========================================================================
+Session total: 39.2s, usage: {'calls': 163, 'prompt_tokens': 88365, 'completion_tokens': 811, 'cost_usd': 0.2773}

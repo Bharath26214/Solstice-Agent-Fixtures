@@ -1,0 +1,128 @@
+[
+  {
+    "id": "INV-2081",
+    "workspace": "WS-4348",
+    "amount_usd": 864,
+    "status": "past_due",
+    "issued": "2026-09-27"
+  },
+  {
+    "id": "INV-2082",
+    "workspace": "WS-1031",
+    "amount_usd": 864,
+    "status": "refunded",
+    "issued": "2026-07-26"
+  },
+  {
+    "id": "INV-2083",
+    "workspace": "WS-2389",
+    "amount_usd": 2160,
+    "status": "paid",
+    "issued": "2026-08-26"
+  },
+  {
+    "id": "INV-2084",
+    "workspace": "WS-4265",
+    "amount_usd": 864,
+    "status": "paid",
+    "issued": "2026-08-26"
+  },
+  {
+    "id": "INV-2085",
+    "workspace": "WS-6447",
+    "amount_usd": 90,
+    "status": "refunded",
+    "issued": "2026-08-15"
+  },
+  {
+    "id": "INV-2086",
+    "workspace": "WS-7576",
+    "amount_usd": 2160,
+    "status": "paid",
+    "issued": "2026-06-06"
+  },
+  {
+    "id": "INV-2087",
+    "workspace": "WS-3081",
+    "amount_usd": 90,
+    "status": "paid",
+    "issued": "2026-09-15"
+  },
+  {
+    "id": "INV-2088",
+    "workspace": "WS-3394",
+    "amount_usd": 1728,
+    "status": "past_due",
+    "issued": "2026-08-22"
+  },
+  {
+    "id": "INV-2089",
+    "workspace": "WS-6741",
+    "amount_usd": 180,
+    "status": "past_due",
+    "issued": "2026-09-05"
+  },
+  {
+    "id": "INV-2090",
+    "workspace": "WS-1350",
+    "amount_usd": 90,
+    "status": "refunded",
+    "issued": "2026-05-17"
+  },
+  {
+    "id": "INV-2091",
+    "workspace": "WS-3281",
+    "amount_usd": 864,
+    "status": "paid",
+    "issued": "2026-06-01"
+  },
+  {
+    "id": "INV-2092",
+    "workspace": "WS-5126",
+    "amount_usd": 180,
+    "status": "paid",
+    "issued": "2026-09-08"
+  },
+  {
+    "id": "INV-2093",
+    "workspace": "WS-4471",
+    "amount_usd": 1728,
+    "status": "past_due",
+    "issued": "2026-08-30"
+  },
+  {
+    "id": "INV-2094",
+    "workspace": "WS-3147",
+    "amount_usd": 90,
+    "status": "refunded",
+    "issued": "2026-07-15"
+  },
+  {
+    "id": "INV-2095",
+    "workspace": "WS-9466",
+    "amount_usd": 864,
+    "status": "past_due",
+    "issued": "2026-06-18"
+  },
+  {
+    "id": "INV-2096",
+    "workspace": "WS-3487",
+    "amount_usd": 1728,
+    "status": "past_due",
+    "issued": "2026-05-28"
+  },
+  {
+    "id": "INV-2097",
+    "workspace": "WS-8211",
+    "amount_usd": 180,
+    "status": "past_due",
+    "issued": "2026-05-25"
+  },
+  {
+    "id": "INV-2098",
+    "workspace": "WS-3454",
+    "amount_usd": 180,
+    "status": "paid",
+    "issued": "2026-08-20"
+  }
+]

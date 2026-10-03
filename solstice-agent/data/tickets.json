@@ -1,0 +1,272 @@
+[
+  {
+    "id": "TKT-1001",
+    "email": "dana@corp.example",
+    "subject": "Page version history missing",
+    "status": "open",
+    "priority": "P1",
+    "opened": "2026-06-21",
+    "last_update": "2026-09-10"
+  },
+  {
+    "id": "TKT-1002",
+    "email": "dana@corp.example",
+    "subject": "Sync stuck on 'uploading'",
+    "status": "open",
+    "priority": "P3",
+    "opened": "2026-09-12",
+    "last_update": "2026-09-13"
+  },
+  {
+    "id": "TKT-1003",
+    "email": "dana@corp.example",
+    "subject": "Sync stuck on 'uploading'",
+    "status": "open",
+    "priority": "P2",
+    "opened": "2026-06-28",
+    "last_update": "2026-09-16"
+  },
+  {
+    "id": "TKT-1004",
+    "email": "dana@corp.example",
+    "subject": "Sync stuck on 'uploading'",
+    "status": "pending_customer",
+    "priority": "P3",
+    "opened": "2026-09-14",
+    "last_update": "2026-09-18"
+  },
+  {
+    "id": "TKT-1005",
+    "email": "liam@northline.example",
+    "subject": "Storage quota incorrect after purge",
+    "status": "pending_customer",
+    "priority": "P1",
+    "opened": "2026-07-21",
+    "last_update": "2026-09-11"
+  },
+  {
+    "id": "TKT-1006",
+    "email": "ida@corp.example",
+    "subject": "Mobile app crashes on open",
+    "status": "open",
+    "priority": "P3",
+    "opened": "2026-07-25",
+    "last_update": "2026-09-18"
+  },
+  {
+    "id": "TKT-1007",
+    "email": "mei@northline.example",
+    "subject": "Slack integration disconnected",
+    "status": "escalated",
+    "priority": "P3",
+    "opened": "2026-08-17",
+    "last_update": "2026-09-12"
+  },
+  {
+    "id": "TKT-1008",
+    "email": "raj@acme.test",
+    "subject": "Cannot verify SAML connection",
+    "status": "resolved",
+    "priority": "P3",
+    "opened": "2026-09-20",
+    "last_update": "2026-09-17"
+  },
+  {
+    "id": "TKT-1009",
+    "email": "sofia@corp.example",
+    "subject": "Cannot verify SAML connection",
+    "status": "escalated",
+    "priority": "P2",
+    "opened": "2026-08-14",
+    "last_update": "2026-09-17"
+  },
+  {
+    "id": "TKT-1010",
+    "email": "mei@corp.example",
+    "subject": "Webhook deliveries failing",
+    "status": "open",
+    "priority": "P3",
+    "opened": "2026-08-20",
+    "last_update": "2026-09-15"
+  },
+  {
+    "id": "TKT-1011",
+    "email": "tomas@bluearc.test",
+    "subject": "Mobile app crashes on open",
+    "status": "escalated",
+    "priority": "P1",
+    "opened": "2026-06-18",
+    "last_update": "2026-09-17"
+  },
+  {
+    "id": "TKT-1012",
+    "email": "raj@corp.example",
+    "subject": "Sync stuck on 'uploading'",
+    "status": "resolved",
+    "priority": "P3",
+    "opened": "2026-09-19",
+    "last_update": "2026-09-16"
+  },
+  {
+    "id": "TKT-1013",
+    "email": "nina@northline.example",
+    "subject": "Sync stuck on 'uploading'",
+    "status": "escalated",
+    "priority": "P3",
+    "opened": "2026-07-13",
+    "last_update": "2026-09-17"
+  },
+  {
+    "id": "TKT-1014",
+    "email": "dana@acme.test",
+    "subject": "API key returning 401",
+    "status": "pending_customer",
+    "priority": "P2",
+    "opened": "2026-09-22",
+    "last_update": "2026-09-17"
+  },
+  {
+    "id": "TKT-1015",
+    "email": "liam@acme.test",
+    "subject": "Slack integration disconnected",
+    "status": "escalated",
+    "priority": "P3",
+    "opened": "2026-08-14",
+    "last_update": "2026-09-16"
+  },
+  {
+    "id": "TKT-1016",
+    "email": "ida@northline.example",
+    "subject": "Conflicted copy appeared after offline edit",
+    "status": "escalated",
+    "priority": "P3",
+    "opened": "2026-09-17",
+    "last_update": "2026-09-12"
+  },
+  {
+    "id": "TKT-1017",
+    "email": "liam@acme.test",
+    "subject": "Invoice shows wrong seat count",
+    "status": "pending_customer",
+    "priority": "P2",
+    "opened": "2026-06-25",
+    "last_update": "2026-09-12"
+  },
+  {
+    "id": "TKT-1018",
+    "email": "sofia@northline.example",
+    "subject": "Sync stuck on 'uploading'",
+    "status": "pending_customer",
+    "priority": "P3",
+    "opened": "2026-08-28",
+    "last_update": "2026-09-15"
+  },
+  {
+    "id": "TKT-1019",
+    "email": "priya@corp.example",
+    "subject": "Slack integration disconnected",
+    "status": "escalated",
+    "priority": "P3",
+    "opened": "2026-09-22",
+    "last_update": "2026-09-11"
+  },
+  {
+    "id": "TKT-1020",
+    "email": "carlos@bluearc.test",
+    "subject": "Sync stuck on 'uploading'",
+    "status": "pending_customer",
+    "priority": "P1",
+    "opened": "2026-07-24",
+    "last_update": "2026-09-12"
+  },
+  {
+    "id": "TKT-1021",
+    "email": "liam@northline.example",
+    "subject": "Mobile app crashes on open",
+    "status": "open",
+    "priority": "P1",
+    "opened": "2026-06-28",
+    "last_update": "2026-09-12"
+  },
+  {
+    "id": "TKT-1022",
+    "email": "ida@corp.example",
+    "subject": "2FA recovery codes lost",
+    "status": "open",
+    "priority": "P1",
+    "opened": "2026-07-22",
+    "last_update": "2026-09-12"
+  },
+  {
+    "id": "TKT-1023",
+    "email": "nina@northline.example",
+    "subject": "2FA recovery codes lost",
+    "status": "resolved",
+    "priority": "P3",
+    "opened": "2026-06-13",
+    "last_update": "2026-09-17"
+  },
+  {
+    "id": "TKT-1024",
+    "email": "carlos@bluearc.test",
+    "subject": "Slack integration disconnected",
+    "status": "resolved",
+    "priority": "P1",
+    "opened": "2026-07-13",
+    "last_update": "2026-09-15"
+  },
+  {
+    "id": "TKT-1025",
+    "email": "raj@northline.example",
+    "subject": "Slack integration disconnected",
+    "status": "pending_customer",
+    "priority": "P3",
+    "opened": "2026-06-16",
+    "last_update": "2026-09-18"
+  },
+  {
+    "id": "TKT-1026",
+    "email": "jonas@acme.test",
+    "subject": "Conflicted copy appeared after offline edit",
+    "status": "open",
+    "priority": "P3",
+    "opened": "2026-08-12",
+    "last_update": "2026-09-14"
+  },
+  {
+    "id": "TKT-1027",
+    "email": "ida@northline.example",
+    "subject": "Invoice shows wrong seat count",
+    "status": "resolved",
+    "priority": "P2",
+    "opened": "2026-08-17",
+    "last_update": "2026-09-13"
+  },
+  {
+    "id": "TKT-1028",
+    "email": "omar@bluearc.test",
+    "subject": "Conflicted copy appeared after offline edit",
+    "status": "pending_customer",
+    "priority": "P2",
+    "opened": "2026-09-21",
+    "last_update": "2026-09-10"
+  },
+  {
+    "id": "TKT-1029",
+    "email": "dana@northline.example",
+    "subject": "Slack integration disconnected",
+    "status": "resolved",
+    "priority": "P2",
+    "opened": "2026-08-24",
+    "last_update": "2026-09-15"
+  },
+  {
+    "id": "TKT-1030",
+    "email": "jonas@corp.example",
+    "subject": "Export link expired",
+    "status": "open",
+    "priority": "P2",
+    "opened": "2026-09-16",
+    "last_update": "2026-09-15"
+  }
+]
