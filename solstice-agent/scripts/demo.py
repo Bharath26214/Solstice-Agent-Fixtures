@@ -1,8 +1,13 @@
 """Scripted multi-turn demo session. Writes a transcript to traces/.
 
-Usage: python scripts/demo.py
+Usage:
+  python scripts/demo.py                          # scripted 14-turn session
+  python scripts/demo.py "How do I reset my password?"
+  python scripts/demo.py "msg 1" "msg 2" ...      # custom messages, one session, in order
+  python scripts/demo.py "msg" --trace            # also write traces/demo_session.txt
 """
 
+import argparse
 import os
 import sys
 import time
@@ -35,6 +40,14 @@ TURNS = [
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Run the support agent on scripted or custom messages.")
+    parser.add_argument("messages", nargs="*", help="custom user messages (default: the scripted session)")
+    parser.add_argument("--trace", action="store_true",
+                        help="write traces/demo_session.txt for custom messages (always written for the scripted session)")
+    args = parser.parse_args()
+    turns = args.messages or TURNS
+    write_trace = not args.messages or args.trace
+
     agent = Agent()
     out_path = os.path.join(os.path.dirname(__file__), "..", "traces", "demo_session.txt")
     lines = []
@@ -44,7 +57,7 @@ def main():
         lines.append(s)
 
     session_start = time.time()
-    for i, msg in enumerate(TURNS, 1):
+    for i, msg in enumerate(turns, 1):
         shown = msg if len(msg) < 300 else msg[:200] + " ... [%d chars total]" % len(msg)
         emit("=" * 72)
         emit("TURN %d  USER: %s" % (i, shown))
@@ -57,9 +70,10 @@ def main():
     emit("=" * 72)
     emit("Session total: %.1fs, usage: %s" % (time.time() - session_start, agent.llm.usage()))
 
-    with open(out_path, "w") as f:
-        f.write("\n".join(lines) + "\n")
-    print("\nTranscript written to traces/demo_session.txt")
+    if write_trace:
+        with open(out_path, "w") as f:
+            f.write("\n".join(lines) + "\n")
+        print("\nTranscript written to traces/demo_session.txt")
 
 
 if __name__ == "__main__":
