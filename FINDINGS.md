@@ -100,22 +100,6 @@ AGENT (0.3s, 4 llm calls so far, est. $0.0130): Contacting support ## How to ope
 
 **Result:** With cosine the security section rose from rank 20 to 10 by vector score, and with BM25 over all chunks it ranks first. All 24 eval questions retrieve context, at about 0.03s per search.
 
-## 13. Step-by-step answers reduced to a heading or "I don't know"
-
-**Problem:** The model answers by copying the context sentence that shares the most words with the question, and needs at least 2 shared words. For "How do I set up SSO with Okta?" the question words are okta, set, sso, up. The only line containing them was the heading "Setting up SSO with Okta", so the answer was just the heading ("Setting up SSO with Okta 1."). Once headings became metadata, no step scored above 1 — the steps say "Single sign-on", not "SSO", and never say "set up" — so the model fell back to its made-up template and the grounding gate replied "I don't know", although retrieval had found the right section.
-
-**Fix:** When the model's answer fails the grounding check, the agent answers from whole chunks instead: the content of the best-matching chunk (see finding 14), or, if there is none, of every retrieved chunk whose heading + text shares at least 2 keywords with the question. Headings are used for matching but never included in the answer. "I don't know" is returned only if no chunk qualifies. Answers that pass the grounding check are unchanged.
-
-**Result:** Turn 2 now returns all 6 Okta setup steps (plus the matching intro: SSO is Enterprise-only; Okta is supported). Fact answers stay short (password reset: "valid for 24 hours and can be used once"), and unrelated questions ("student discount", "pay with Bitcoin") still get "I couldn't find that".
-
-## 14. Grounded answers taken from the wrong chunk
-
-**Problem:** The top-k chunks are combined into one prompt, but the model ignores chunk rank and copies the single sentence that shares the most words with the question. For "How do I open a support ticket?" retrieval ranked the right section first, yet the answer came from the second chunk ("If a ticket is not progressing, reply with "escalate"…"): it shares two words (ticket, support) in one sentence, while the right section spreads them over two sentences and has "open" only in its heading. The grounding gate let it through, because it checks that an answer is supported by the context, not that it answers the question.
-
-**Fix:** When the top-ranked chunk's heading + text shares at least 2 keywords with the question, only that chunk is sent to the model, so stray sentences from lower-ranked chunks can't win. All questions, including how-to questions, are answered by the model; if its answer fails the grounding check, the best chunk's content is used as the answer (finding 13). Otherwise the top-k chunks are combined as before.
-
-**Result:** "How do I fix pages showing old content after reconnecting?" and "Where do I find my billing history?" are answered by the model from the best chunk alone. "How do I open a support ticket?" returns the Contact-support instructions and turn 2 returns all 6 Okta steps: the model is tried first, but no single sentence in those sections repeats 2 of the question's words, so the best chunk's content is used. Fact questions are unchanged ("valid for 24 hours and can be used once").
-
 ## Overall: before and after
 
 Scripted 14-turn demo session (`python3 scripts/demo.py`):
